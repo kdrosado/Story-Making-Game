@@ -7,12 +7,13 @@
 5. Print story to document window
 */
 
-prompt();
-var noun;
-var verb;
-var adjective;
+var adjective = prompt("Please type an adjective");
+var verb = prompt("Please type a verb");
+var noun = prompt("Please type a noun");
+var sentence = "<h2>There once was a " + adjective;
+sentence += " penguin who wanted to use JS to " +  verb;
+sentence += " the " + noun + ".</h2>";
+
+document.write(sentence);
 
 alert("You are finshed");
-
-document.write();
-
