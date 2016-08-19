@@ -7,9 +7,18 @@
 5. Print story to document window
 */
 
-var adjective = prompt("Please type an adjective");
-var verb = prompt("Please type a verb");
-var noun = prompt("Please type a noun");
+var questions = 3;
+var questionsLeft = ' ['+ questions + 'questionsleft]';
+var adjective = prompt("Please type an adjective" + questionsLeft);
+questions -= 1;
+
+questionsLeft = ' ['+ questions + 'questionsleft]';
+var verb = prompt("Please type a verb" + questionsLeft);
+questions -= 1;
+
+questionsLeft = ' ['+ questions + 'questionsleft]';
+var noun = prompt("Please type a noun" + questionsLeft);
+
 var sentence = "<h2>There once was a " + adjective;
 sentence += " penguin who wanted to use JS to " +  verb;
 sentence += " the " + noun + ".</h2>";
